@@ -37,7 +37,7 @@ namespace GlassdoorReviewsCollector
         public IParserState LastParserState { get; set; }
 
         [HelpOption]
-        private string GetUsage()
+        public string GetUsage()
         {
             return HelpText.AutoBuild(this,
               (HelpText current) => HelpText.DefaultParsingErrorsHandler(this, current));
@@ -46,10 +46,7 @@ namespace GlassdoorReviewsCollector
         public bool CheckParams()
         {
             if (String.IsNullOrEmpty(this.Location) && String.IsNullOrEmpty(this.Company))
-            {
-                Console.WriteLine(GetUsage());
                 return false;
-            }
             else
                 return true;
         }

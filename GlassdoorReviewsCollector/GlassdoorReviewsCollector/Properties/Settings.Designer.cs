@@ -34,5 +34,66 @@ namespace GlassdoorReviewsCollector.Properties {
                 this["homepage"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#KeywordSearch")]
+        public string company_name_selector {
+            get {
+                return ((string)(this["company_name_selector"]));
+            }
+            set {
+                this["company_name_selector"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#LocationSearch")]
+        public string location_selector {
+            get {
+                return ((string)(this["location_selector"]));
+            }
+            set {
+                this["location_selector"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#SrchHero > div > div.static-hph-hero-srch.acq-2414-home-cta-A > div.search-bar.m" +
+            "inimized > div > form")]
+        public string form_selector {
+            get {
+                return ((string)(this["form_selector"]));
+            }
+            set {
+                this["form_selector"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#HeroSearchButton")]
+        public string search_button_selector {
+            get {
+                return ((string)(this["search_button_selector"]));
+            }
+            set {
+                this["search_button_selector"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(".autocomplete-suggestions ")]
+        public string autocomplete_divs_selector {
+            get {
+                return ((string)(this["autocomplete_divs_selector"]));
+            }
+            set {
+                this["autocomplete_divs_selector"] = value;
+            }
+        }
     }
 }
