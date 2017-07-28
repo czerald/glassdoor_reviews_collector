@@ -5,5 +5,20 @@
     <Setting Name="homepage" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://www.glassdoor.com/Reviews/index.htm</Value>
     </Setting>
+    <Setting Name="company_name_selector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#KeywordSearch</Value>
+    </Setting>
+    <Setting Name="location_selector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#LocationSearch</Value>
+    </Setting>
+    <Setting Name="form_selector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#SrchHero &gt; div &gt; div.static-hph-hero-srch.acq-2414-home-cta-A &gt; div.search-bar.minimized &gt; div &gt; form</Value>
+    </Setting>
+    <Setting Name="search_button_selector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#HeroSearchButton</Value>
+    </Setting>
+    <Setting Name="autocomplete_divs_selector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.autocomplete-suggestions </Value>
+    </Setting>
   </Settings>
 </SettingsFile>
