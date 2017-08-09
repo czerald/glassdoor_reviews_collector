@@ -95,5 +95,68 @@ namespace GlassdoorReviewsCollector.Properties {
                 this["autocomplete_divs_selector"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#LocationFilter")]
+        public string results_locationSelector {
+            get {
+                return ((string)(this["results_locationSelector"]));
+            }
+            set {
+                this["results_locationSelector"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#MainCol > div:nth-child(1) > div:nth-child({i}) > div.empInfo.tbl > div.header.c" +
+            "ell.info > div.margBotXs > a")]
+        public string results_names {
+            get {
+                return ((string)(this["results_names"]));
+            }
+            set {
+                this["results_names"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#MainCol > div:nth-child(1) > div:nth-child({i}) > div.empInfo.tbl > div.header.c" +
+            "ell.info > div.showDesk.subtle > span.webInfo > span")]
+        public string results_website {
+            get {
+                return ((string)(this["results_website"]));
+            }
+            set {
+                this["results_website"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#MainCol > div:nth-child(1) > div:nth-child({i}) > div.empLinks.tbl.noswipe > spa" +
+            "n > div > span:nth-child(1) > span.bigRating.strong.margRtSm.h1")]
+        public string results_rating {
+            get {
+                return ((string)(this["results_rating"]));
+            }
+            set {
+                this["results_rating"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#FooterPageNav > div > ul > li.next > a")]
+        public string results_nextPage {
+            get {
+                return ((string)(this["results_nextPage"]));
+            }
+            set {
+                this["results_nextPage"] = value;
+            }
+        }
     }
 }

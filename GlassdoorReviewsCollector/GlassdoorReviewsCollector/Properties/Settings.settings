@@ -20,5 +20,20 @@
     <Setting Name="autocomplete_divs_selector" Type="System.String" Scope="User">
       <Value Profile="(Default)">.autocomplete-suggestions </Value>
     </Setting>
+    <Setting Name="results_locationSelector" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#LocationFilter</Value>
+    </Setting>
+    <Setting Name="results_names" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#MainCol &gt; div:nth-child(1) &gt; div:nth-child({i}) &gt; div.empInfo.tbl &gt; div.header.cell.info &gt; div.margBotXs &gt; a</Value>
+    </Setting>
+    <Setting Name="results_website" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#MainCol &gt; div:nth-child(1) &gt; div:nth-child({i}) &gt; div.empInfo.tbl &gt; div.header.cell.info &gt; div.showDesk.subtle &gt; span.webInfo &gt; span</Value>
+    </Setting>
+    <Setting Name="results_rating" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#MainCol &gt; div:nth-child(1) &gt; div:nth-child({i}) &gt; div.empLinks.tbl.noswipe &gt; span &gt; div &gt; span:nth-child(1) &gt; span.bigRating.strong.margRtSm.h1</Value>
+    </Setting>
+    <Setting Name="results_nextPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FooterPageNav &gt; div &gt; ul &gt; li.next &gt; a</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

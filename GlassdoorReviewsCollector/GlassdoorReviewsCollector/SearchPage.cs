@@ -68,7 +68,7 @@ namespace GlassdoorReviewsCollector
                     logger.Debug("Setting value to location textbox");
                     elemLocationTextbox.SendKeys(Location);
                 }
-
+                
                 logger.Debug("Searching...");
                 elemSearchButton.Click();
                 Thread.Sleep(5000);
