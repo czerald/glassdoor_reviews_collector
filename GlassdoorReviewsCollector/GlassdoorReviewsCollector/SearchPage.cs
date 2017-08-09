@@ -48,13 +48,14 @@ namespace GlassdoorReviewsCollector
             }
             else
             {
+                logger.Debug("Elements found.");
                 return true;
             }
         }
 
         public bool Search(string Location="", string Company="")
         {
-            if (!String.IsNullOrEmpty(Company) && !String.IsNullOrEmpty(Location))
+            if (!String.IsNullOrEmpty(Company) || !String.IsNullOrEmpty(Location))
             {
                 if (!String.IsNullOrEmpty(Company))
                 {
@@ -68,13 +69,20 @@ namespace GlassdoorReviewsCollector
                     elemLocationTextbox.SendKeys(Location);
                 }
 
-                Console.ReadKey();
+                logger.Debug("Searching...");
                 elemSearchButton.Click();
                 Thread.Sleep(5000);
                 return true;
             }
             else
+                logger.Error("Missing program argument");
                 return false;
+        }
+
+        public void Dispose()
+        {
+            logger.Info("Exiting browser");
+            driver.Dispose();
         }
     }
 }

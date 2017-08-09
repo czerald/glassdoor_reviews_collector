@@ -22,8 +22,20 @@ namespace GlassdoorReviewsCollector
                 }
                 else
                 {
-
+                    SearchPage sp = new SearchPage();
+                    sp.NavigateHome();
+                    if(sp.LocateForm())
+                    {
+                        if(string.IsNullOrEmpty(options.Company) && !string.IsNullOrEmpty(options.Location))
+                            sp.Search(Location: options.Location);
+                        else if (!string.IsNullOrEmpty(options.Company) && string.IsNullOrEmpty(options.Location))
+                            sp.Search(Company: options.Company);
+                        else if (!string.IsNullOrEmpty(options.Company) && !string.IsNullOrEmpty(options.Location))
+                            sp.Search(options.Location, options.Company);
+                    }
+                    sp.Dispose();
                 }
+                Console.WriteLine("Program finished. Press any key to exit.");
                 Console.ReadKey();
             }
 
